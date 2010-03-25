@@ -63,7 +63,7 @@
       <file leaf-file-name="Cucumber.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/Cucumber.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.18">
+            <state line="14" column="17" selection-start="662" selection-end="662" vertical-scroll-proportion="0.21">
               <folding />
             </state>
           </provider>
@@ -72,7 +72,7 @@
       <file leaf-file-name="_CucumberSetup.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/_CucumberSetup.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+            <state line="12" column="32" selection-start="428" selection-end="440" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -493,14 +493,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/_CucumberSetup.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+        <state line="12" column="32" selection-start="428" selection-end="440" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Cucumber.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.18">
+        <state line="14" column="17" selection-start="662" selection-end="662" vertical-scroll-proportion="0.21">
           <folding />
         </state>
       </provider>

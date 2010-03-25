@@ -10,7 +10,7 @@ includeTargets << grailsScript("_GrailsClean")
 target(setup: "The description of the script goes here!") {
     depends( classpath )
 
-    taskdef (name: 'cucumber', classname: 'cuke4duke.ant.CucumberTask')
+    taskdef (name: 'run-cucumber', classname: 'cuke4duke.ant.CucumberTask')
 
     def jrubyHome = "${cucumberPluginDir}/lib/.jruby"
     property(name: 'jruby.home', value: jrubyHome)
