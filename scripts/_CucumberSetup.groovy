@@ -1,14 +1,15 @@
-includeTargets << grailsScript("Init")
-includeTargets << grailsScript("Package")
-includeTargets << grailsScript("Bootstrap")
-//includeTargets << grailsScript("_GrailsBootstrap")
-includeTargets << grailsScript("_GrailsRun")
-includeTargets << grailsScript("_GrailsSettings")
-includeTargets << grailsScript("_GrailsClean")
+// Change default env to test
+scriptEnv = "test"
 
+includeTargets << grailsScript("Init")
+includeTargets << grailsScript("Bootstrap")
+includeTargets << grailsScript("RunApp")
+includeTargets << grailsScript("RunWar")
+
+generateLog4jFile = true
 
 target(setup: "The description of the script goes here!") {
-    depends( classpath )
+    depends(classpath, checkVersion, parseArguments, clean, cleanTestReports, configureProxy)
 
     taskdef (name: 'run-cucumber', classname: 'cuke4duke.ant.CucumberTask')
 
