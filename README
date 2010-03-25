@@ -1,8 +1,17 @@
-# Installation
-$ grails install-plugin grails-cucumber-0.2.zip
+Status:
+    Currently support running an HTMLUnit or Webdriver functional test against the current Grails 
+    application. Automatically installs all needed JRuby support for cuke4duke.
 
-$ grails cucumber
 
-Place Cucumber Feature definitions in baseDir/features and groovy step definitions in baseDir/features/step_definitions. Global Before and After hooks can be placed in baseDir/features/support (in groovy files).
+Installation
+    $ grails install-plugin path/to/grails-cucumber-0.2.zip
+
+Usage:
+    $ grails cucumber
+
+    Place Cucumber Feature definitions in baseDir/features and groovy step 
+    definitions in baseDir/features/step_definitions. Global Before and After 
+    hooks can be placed in baseDir/features/support (in groovy files).
 
 See the wiki for more info:  http://wiki.github.com/danklynn/grails-cucumber/
+TODO: move step definitions to test/cucumber/steps and provide them to cucumber using Spring.
