@@ -35,7 +35,7 @@ def withServer(Closure c) {
         throw ex
     }
     finally {
-        if (testingInProcessServer && server) {
+        if (server) {
             stopWarServer()
         }
         System.setProperty('grails.run.mode', previousRunMode)
