@@ -1,8 +1,9 @@
-<plugin name='grails-cucumber' version='0.1' grailsVersion='1.2.0 &gt; *'>
-  <author>Your name</author>
-  <title>Plugin summary/headline</title>
+<plugin name='cucumber' version='0.1' grailsVersion='1.2.0 &gt; *'>
+  <author>Dan Lynn</author>
+  <authorEmail>dan@prax.is</authorEmail>
+  <title>Grails Cucumber Plugin</title>
   <description>\
-Brief description of the plugin.
+Provides support command-line or continuous-integrations for Cucumber using JRuby and cuke4duke
 </description>
   <documentation>http://grails.org/plugin/grails-cucumber</documentation>
   <resources>
