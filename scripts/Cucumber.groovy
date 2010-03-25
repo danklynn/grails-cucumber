@@ -12,7 +12,7 @@ target(cucumber: "Runs cucumber against all the features in the 'features' direc
     }
 
     //todo: move step definitions into the test/cucumber folder and use spring to find them:  objectFactory: 'SpringFactory'
-    "run-cucumber"(args: "--color --format pretty --format junit --out target/junit-report --guess ${pathToFeatures}") {
+    "cucumber"(args: "--color --format pretty --format junit --out target/junit-report --guess ${pathToFeatures.replaceAll(' ', '\\\\ ')}") {
         classpath {
             path(refid:"jruby.classpath")
         }
