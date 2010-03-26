@@ -9,7 +9,7 @@ includeTargets << grailsScript("RunWar")
 generateLog4jFile = true
 
 target(setup: "The description of the script goes here!") {
-    depends(classpath, checkVersion, parseArguments, clean, cleanTestReports, configureProxy)
+    depends(classpath, checkVersion, parseArguments)
 
     taskdef (name: 'run-cucumber', classname: 'cuke4duke.ant.CucumberTask')
 
