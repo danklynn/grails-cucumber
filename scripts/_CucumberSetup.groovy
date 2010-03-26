@@ -16,7 +16,7 @@ target(setup: "The description of the script goes here!") {
     def jrubyHome = "${cucumberPluginDir}/lib/.jruby"
     property(name: 'jruby.home', value: jrubyHome)
     path(id: 'jruby.classpath') {
-        fileset( dir: "${grailsSettings.grailsHome}/lib/") {
+        fileset( dir: "${grailsSettings.grailsHome}/lib") {
             include name: "**/*.jar"
         }
         
@@ -25,6 +25,9 @@ target(setup: "The description of the script goes here!") {
         }
         fileset(dir: "target/classes") {
             include name: "**/*.class"
+        }
+        fileset(dir: "lib") {
+            include name: "**/*.jar"
         }
     }
 
