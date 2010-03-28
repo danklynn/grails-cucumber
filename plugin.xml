@@ -3,7 +3,7 @@
   <authorEmail>dan@prax.is</authorEmail>
   <title>Grails Cucumber Plugin</title>
   <description>\
-Provides support command-line or continuous-integrations for Cucumber using JRuby and cuke4duke
+Provides command-line or continuous-integrations support for Cucumber using JRuby and cuke4duke
 </description>
   <documentation>http://grails.org/plugin/grails-cucumber</documentation>
   <resources>

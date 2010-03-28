@@ -1,5 +1,9 @@
 includeTargets << new File("${cucumberPluginDir}/scripts/_CucumberSetup.groovy")
 
+target('default': "Runs cucumber against all the features in the 'features' directory.") {
+    cucumber()
+}
+
 target(cucumber: "Runs cucumber against all the features in the 'features' directory.") {
     depends(setup, packageApp)
 
@@ -27,7 +31,7 @@ target(cucumber: "Runs cucumber against all the features in the 'features' direc
 }
 
 target(prepareToRun: "preps the appfor running") {
-    depends(clean, cleanTestReports, configureProxy)
+    depends(cleanTestReports, configureProxy)
 }
 
 def withServer(Closure c) {
@@ -37,9 +41,7 @@ def withServer(Closure c) {
     System.setProperty('grails.run.mode', "cucumber")
 
     try {
-        server = configureHttpServer()
-        server.start()
-
+        runApp()
         c()
     }
     catch (Exception ex) {
@@ -47,12 +49,7 @@ def withServer(Closure c) {
         throw ex
     }
     finally {
-        if (server) {
-            stopWarServer()
-        }
+        stopServer()
         System.setProperty('grails.run.mode', previousRunMode)
     }
 }
-
-
-setDefaultTarget("cucumber")

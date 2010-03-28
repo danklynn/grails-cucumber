@@ -17,7 +17,7 @@ class CucumberGrailsPlugin {
     def authorEmail = "dan@prax.is"
     def title = "Grails Cucumber Plugin"
     def description = '''\\
-Provides support command-line or continuous-integrations for Cucumber using JRuby and cuke4duke
+Provides command-line or continuous-integrations support for Cucumber using JRuby and cuke4duke
 '''
 
     // URL to the plugin's documentation
