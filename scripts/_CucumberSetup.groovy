@@ -23,7 +23,7 @@ target(setup: "The description of the script goes here!") {
         fileset(dir: "${cucumberPluginDir}") {
             include name: "**/*.jar"
         }
-        fileset(dir: "target/classes") {
+        fileset(dir: "${grailsSettings.classesDir.path}") {
             include name: "**/*.class"
         }
         fileset(dir: "lib") {
