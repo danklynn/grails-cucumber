@@ -1,9 +1,6 @@
 includeTargets << new File("${cucumberPluginDir}/scripts/_CucumberSetup.groovy")
 
-target('default': "Runs cucumber against all the features in the 'features' directory.") {
-    cucumber()
-}
-
+setDefaultTarget("cucumber")
 target(cucumber: "Runs cucumber against all the features in the 'features' directory.") {
     depends(setup, packageApp)
 
