@@ -30,10 +30,11 @@ target(setup: "The description of the script goes here!") {
             include name: "**/*.jar"
         }
     }
-
-    if (!new File(jrubyHome).isDirectory()) {
+    property(name: 'jruby.classpath', refid: 'jruby.classpath')
+    //echo('${jruby.classpath}')
+    if (!new File(jrubyHome).isDirectory() || !new File(jrubyHome+"/cuke4duke").isDirectory()) {
         echo("Installing required JRuby gems...")
         taskdef(name:"gem", classname:"cuke4duke.ant.GemTask")
-        gem args: "install cuke4duke --version 0.2.4 --source http://gemcutter.org/"
+        gem args: "install cuke4duke --version 0.3.0"
     }
 }
